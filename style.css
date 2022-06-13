@@ -2,5 +2,149 @@
   box-sizing: border-box;
 }
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
   font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #4d2323;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+.nav-item {
+  padding: 0 20px;
+  line-height: 17px;
+}
+.section-item a {
+  color: #829985;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+.section-item a:hover {
+  color: #4d2323;
+}
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
+.section-main {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+.section-title {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #829985;
+}
+.nav-item a {
+  text-decoration: underline;
+  color: coral;
+}
+.nav-item a:hover {
+  color: white;
+}
+.section a {
+  text-decoration: none;
+  transition: color 0.5s;
+  color: coral;
+}
+.section a:hover {
+  color: black;
+}
+.footer > .container {
+  display: flex;
+  justify-content: space-evenly;
+  align-self: center;
+  color: coral;
+}
+.gitlink {
+  text-decoration: none;
+  align-self: center;
+  color: coral;
+  background-color: #000;
+}
+footer a:hover {
+  color: white;
+}
+footer > .container > span {
+  align-self: center;
+  background-color: #000;
+}
+footer {
+  background-color: #000;
+}
+.header {
+  background-color: #000;
+  height: 50px;
+}
+.logolink {
+  background-color: white;
+}
+.js {
+  color: coral;
+}
+.section > p {
+  padding-top: 5px;
+}
+pre {
+  padding-top: 5px;
+}
+.avatar {
+  border-radius: 50%;
+}
+.li-contacts1 {
+  list-style-image: url(/rsschool-cv/assets/svg/gps.png);
+}
+.li-contacts2 {
+  list-style-image: url(/rsschool-cv/assets/svg/open.png);
+}
+.li-contacts3 {
+  list-style-image: url(/rsschool-cv/assets/svg/github.png);
+}
+.li-contacts4 {
+  list-style-image: url(/rsschool-cv/assets/svg/discord.png);
+}
+.li-skills1 {
+  list-style-image: url(/rsschool-cv/assets/svg/javascript.png);
+}
+.li-skills2 {
+  list-style-image: url(/rsschool-cv/assets/svg/react.png);
+}
+.li-skills3 {
+  list-style-image: url(/rsschool-cv/assets/svg/git.png);
+}
+.li-skills4 {
+  list-style-image: url(/rsschool-cv/assets/svg/figma.png);
+}
+.li-courses {
+  list-style-image: url(/rsschool-cv/assets/svg/rss.jpg);
+}
+.li-projects {
+  list-style-image: url(/rsschool-cv/assets/svg/rss.jpg);
 }
